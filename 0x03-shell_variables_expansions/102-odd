@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -d " " -f9 | grep -n '' | grep -E '[02468]'| cut -d ":" -f2 
+cut -d " " -f9 | grep -n '' | grep -E '[02468]:'| cut -d ":" -f2 
