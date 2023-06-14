@@ -1,2 +1,2 @@
 #!/bin/bash
-awk "NR % 2==1"
+ls -l | grep -n '' | grep -E '^[02468]:'
