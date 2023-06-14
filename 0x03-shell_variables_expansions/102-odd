@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -l | grep -n '' | grep -E '^[02468]:'
+ls -l | grep -n '' | grep -E '^[02468]:' | cut -d " " -f9
