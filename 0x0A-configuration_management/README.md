@@ -15,7 +15,7 @@ This project contains tasks for learning about configuration management using Pu
 + [x] 1\. Install a package<br/>_**[1-install_a_package.pp](1-install_a_package.pp)**_ installs `puppet-lint` using Puppet.
   + Requirements:
     + Install `puppet-lint`.
-    + Version must be `2.5.0`.
+    + Version must be `2.1.0`.
 
 + [x] 2\. Execute a command<br/>_**[2-execute_a_command.pp](2-execute_a_command.pp)**_ creates a manifest that kills a process named `killmenow` using Puppet.
   + Requirements:
