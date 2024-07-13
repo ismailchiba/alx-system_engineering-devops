@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 # Installs, configures, and starts the server
+sudo su
 apt-get update
 apt-get install -y nginx
 ufw allow 'Nginx HTTP'
-mkdir -p /var/www/html
-chmod -R 755 /var/www
-echo 'Hello World!' > /var/www/html/index.html
+chown -R "$USER:$USER" /var/www/html/*
+chmod -R 755 /var/www/html
+echo 'Hello World!' > /var/www/html/index.html	
 
 SERVER_CONFIG=\
 "server {
