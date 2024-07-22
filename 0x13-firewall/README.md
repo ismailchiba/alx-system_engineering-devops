@@ -15,3 +15,7 @@ This project contains tasks for learning about how to configure a server's firew
   - 22 (SSH)
   - 443 (HTTPS SSL)
   - 80 (HTTP)
+
+### 1. Port forwarding
+
+`100-port_forwarding` contains `ufw` configuration file (`/etc/ufw/before.rules`) of a firewall that redirects port `8080/TCP` to port `80/TCP`. This configuration should be applied to the `web-01` server given to you.
