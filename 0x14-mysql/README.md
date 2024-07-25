@@ -46,3 +46,11 @@ Enter password:
 -replica_user must have the appropriate permissions to replicate your primary MySQL server.
 -holberton_user will need SELECT privileges on the mysql.user table in order to check that replica_user was created with the correct permissions.
 
+## 3. Setup a Primary-Replica infrastructure using MySQL
+### MySQL primary :
+    -MySQL primary or the database Master : hosted on web-01
+### MySQL replica :
+    -MySQL replica or the database Slave  : hosted on web-02
+
+
+
