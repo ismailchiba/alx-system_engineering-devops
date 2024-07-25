@@ -1,0 +1,24 @@
+# 0x14. MySQL 
+
+## General
+### What is the main role of a database
+The main role of a database is to store and manage data efficiently, allowing for easy retrieval, updating, and management of the data.
+
+### What is a database replica
+A database replica is a copy of a database that is synchronized with the primary database, allowing for redundancy and load balancing.
+
+### What is the purpose of a database replica
+The purpose of a database replica is to provide data redundancy, improve read performance by distributing the load, and ensure high availability and disaster recovery.
+
+### Why database backups need to be stored in different physical locations
+Database backups need to be stored in different physical locations to protect against data loss due to hardware failures, natural disasters, or other catastrophic events that may affect the primary storage location.
+
+### What operation should you regularly perform to make sure that your database backup strategy actually works
+Regularly perform backup restoration tests to ensure that your database backup strategy is effective and that backups can be successfully restored in case of data loss.
+
+## 0. Install MySQL
+**mandatory**
+
+First things first, let’s get MySQL installed on both your web-01 and web-02 servers.
+
+MySQL distribution must be 5.7.x
