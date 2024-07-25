@@ -24,7 +24,7 @@ First things first, let’s get MySQL installed on both your web-01 and web-02 s
 MySQL distribution must be 5.7.x
 
 ## 1. Let us in!
-# 1. Create MySQL User:
+### 1. Create MySQL User:
 
 create a MySQL user named holberton_user on both web-01 and web-02 with the host name set to localhost and the password projectcorrection280hbtn. This will allow us to access the replication status on both servers.
 
@@ -32,8 +32,17 @@ Ensure holberton_user has permission to check the primary/replica status of your
 
 ~$ mysql -uholberton_user -p -e "SHOW GRANTS FOR 'holberton_user'@'localhost'"
 Enter password:
+
 +-----------------------------------------------------------------+
 | Grants for holberton_user@localhost                             |
 +-----------------------------------------------------------------+
 | GRANT REPLICATION CLIENT ON *.* TO 'holberton_user'@'localhost' |
 +-----------------------------------------------------------------+
+
+## 2. Quite an experience to live in fear, isn't it?
+### 1. Create replca for database
+#### create a replca user:
+-The name of the new user should be replica_user, with the host name set to %, and can have whatever password you’d like.
+-replica_user must have the appropriate permissions to replicate your primary MySQL server.
+-holberton_user will need SELECT privileges on the mysql.user table in order to check that replica_user was created with the correct permissions.
+
