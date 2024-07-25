@@ -22,3 +22,18 @@ Regularly perform backup restoration tests to ensure that your database backup s
 First things first, let’s get MySQL installed on both your web-01 and web-02 servers.
 
 MySQL distribution must be 5.7.x
+
+## 1. Let us in!
+# 1. Create MySQL User:
+
+create a MySQL user named holberton_user on both web-01 and web-02 with the host name set to localhost and the password projectcorrection280hbtn. This will allow us to access the replication status on both servers.
+
+Ensure holberton_user has permission to check the primary/replica status of your databases.
+
+~$ mysql -uholberton_user -p -e "SHOW GRANTS FOR 'holberton_user'@'localhost'"
+Enter password:
++-----------------------------------------------------------------+
+| Grants for holberton_user@localhost                             |
++-----------------------------------------------------------------+
+| GRANT REPLICATION CLIENT ON *.* TO 'holberton_user'@'localhost' |
++-----------------------------------------------------------------+
