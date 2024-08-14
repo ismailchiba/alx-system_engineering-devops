@@ -10,7 +10,8 @@ from requests import get
 def top_ten(subreddit):
     if subreddit is None or not isinstance(subreddit, str):
         return 0
-    url = 'https://www.reddit.com/r/{}/hot/.json'.format(subreddit)
+    url = 'https://www.reddit.com/r/{}/hot/.json'\
+        .format(subreddit)
     headers = {'user_agent': 'Mozilla/5.0'}
     params = {'limit': 10}
     response = get(url, headers=headers, params=params)
