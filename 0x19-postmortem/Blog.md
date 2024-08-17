@@ -1,6 +1,8 @@
 
 # Incident Report for MySQL Server Issue
 ![Server down](1570399514614.png)
+
+
 **Summary**
 On September 11th, 2018, at 12:00 AM PST, the website experienced a downtime due to a MySQL server issue, resulting in a 504 error. The server is part of a LAMP stack, and the issue caused significant disruption until it was resolved.
 
